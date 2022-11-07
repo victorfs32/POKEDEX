@@ -76,10 +76,37 @@ img{
   width: 90%;
 }
 
-.progress-bar{
-  background-color: #fc7c7f;
-}
-
 .progress-value{
   font-size: 15px;
+}
+
+.hp{
+  background-color: #ff0000;
+}
+
+.atk{
+  background-color: #ffa500 ;
+}
+
+.def{
+  background-color: #0004ff;
+}
+
+.vel{
+  background-color: #008000;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 2px 23px black;
+    width: 80%;
+    height: 580px;
+}
+img {
+  width: 226px;
+  height: 218px;
+  align-items: center;
+}
 }

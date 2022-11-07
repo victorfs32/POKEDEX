@@ -37,24 +37,24 @@ function App() {
 
   return (
   
-    <div class="content">
-        <div class="card">
+    <div className="content">
+        <div className="card">
         <form onSubmit={pesquisar}>
               <input type="text" className="form" placeholder="ID ou Nome" aria-label="ID ou Nome" aria-describedby="button-addon2" />
               <button className="btn btn-primary" type="submit" id="button-addon2">Buscar</button> 
             </form>
-            <div class="topCard">
-                <h2 class="title">#{id}</h2>
-                <h3 class="title">{nome}</h3>
-                <span class="secondText"></span>
+            <div className="topCard">
+                <h2 className="title">#{id}</h2>
+                <h3 className="title">{nome}</h3>
+                <span className="secondText"></span>
             </div>
-            <div class="mediaCard">
+            <div className="mediaCard">
                 <img src={img} alt="logo"/>
                 </div>
                 <div className='progress-title'>
                   <h5>Hp</h5>
                   <div className='progress'>
-                      <div className='progress-bar' style={{width: `${Hp}%`}}>
+                      <div className='progress-bar hp' style={{width: `${Hp}%`}}>
                           <div className='progress-value'>{Hp}%</div>
                       </div>
                   </div>
@@ -62,7 +62,7 @@ function App() {
                 <div className='progress-title'>
                   <h5>Attack</h5>
                   <div className='progress'>
-                      <div className='progress-bar' style={{width: `${Atk}%`}}>
+                      <div className='progress-bar atk' style={{width: `${Atk}%`}}>
                           <div className='progress-value'>{Atk}%</div>
                       </div>
                   </div>
@@ -70,7 +70,7 @@ function App() {
                 <div className='progress-title'>
                   <h5>Defense</h5>
                   <div className='progress'>
-                      <div className='progress-bar' style={{width: `${Def}%`}}>
+                      <div className='progress-bar def' style={{width: `${Def}%`}}>
                           <div className='progress-value'>{Def}%</div>
                       </div>
                   </div>
@@ -78,7 +78,7 @@ function App() {
                 <div className='progress-title'>
                   <h5>Speed</h5>
                   <div className='progress'>
-                      <div className='progress-bar' style={{width: `${Vel}%`}}>
+                      <div className='progress-bar vel' style={{width: `${Vel}%`}}>
                           <div className='progress-value'>{Vel}%</div>
                       </div>
                   </div>
