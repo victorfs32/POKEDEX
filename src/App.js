@@ -10,8 +10,8 @@ function App() {
   const [img, setImg] = useState("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg");
   const [nome, setNome] = useState("buba");
   const [Hp, setHp] = useState("45");
-  const [Atk, setAtk] = useState("80");
-  const [Def, setDef] = useState("80");
+  const [Atk, setAtk] = useState("49");
+  const [Def, setDef] = useState("49");
   const [Vel, setVel] = useState("80");
   const [Tp, setTp] = useState("grass");
   
@@ -41,7 +41,7 @@ function App() {
         <div class="card">
         <form onSubmit={pesquisar}>
               <input type="text" className="form" placeholder="ID ou Nome" aria-label="ID ou Nome" aria-describedby="button-addon2" />
-              <button className="btn btn-primary"  type="submit" id="button-addon2">Buscar</button> 
+              <button className="btn btn-primary" type="submit" id="button-addon2">Buscar</button> 
             </form>
             <div class="topCard">
                 <h2 class="title">#{id}</h2>
@@ -50,16 +50,41 @@ function App() {
             </div>
             <div class="mediaCard">
                 <img src={img} alt="logo"/>
-            <div class="bottomCard">
-                <h3 class="atributos">HP: {Hp}</h3>
-                <h3 class="atributos">ATTACKS: {Atk}</h3>
-                <h3 class="atributos">DEFENSE: {Def}</h3>
-                <h3 class="atributos">SPEED: {Vel}</h3>
-                <h3 class="atributos">TYPE: {Tp}</h3>
                 </div>
+                <div className='progress-title'>
+                  <h5>Hp</h5>
+                  <div className='progress'>
+                      <div className='progress-bar' style={{width: `${Hp}%`}}>
+                          <div className='progress-value'>{Hp}%</div>
+                      </div>
+                  </div>
+                </div>
+                <div className='progress-title'>
+                  <h5>Attack</h5>
+                  <div className='progress'>
+                      <div className='progress-bar' style={{width: `${Atk}%`}}>
+                          <div className='progress-value'>{Atk}%</div>
+                      </div>
+                  </div>
+                </div>
+                <div className='progress-title'>
+                  <h5>Defense</h5>
+                  <div className='progress'>
+                      <div className='progress-bar' style={{width: `${Def}%`}}>
+                          <div className='progress-value'>{Def}%</div>
+                      </div>
+                  </div>
+                </div>
+                <div className='progress-title'>
+                  <h5>Speed</h5>
+                  <div className='progress'>
+                      <div className='progress-bar' style={{width: `${Vel}%`}}>
+                          <div className='progress-value'>{Vel}%</div>
+                      </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
   );
 }
 

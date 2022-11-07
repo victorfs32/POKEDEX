@@ -59,13 +59,27 @@ form{
 
 }
 
-.atributos{
-  font-size: 20px;
-  color: white;
-}
-
 img{
   width: 226px;
   height: 218px;
   margin-left: 40%;
+}
+
+.progress-title{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 35px;
+}
+
+.progress{
+  background-color: #ffffff;
+  width: 90%;
+}
+
+.progress-bar{
+  background-color: #fc7c7f;
+}
+
+.progress-value{
+  font-size: 15px;
 }
