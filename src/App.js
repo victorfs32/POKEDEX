@@ -13,7 +13,6 @@ function App() {
   const [Atk, setAtk] = useState("49");
   const [Def, setDef] = useState("49");
   const [Vel, setVel] = useState("80");
-  const [Tp, setTp] = useState("grass");
   
   // pesquisa
   const pesquisar = e => {
@@ -30,7 +29,6 @@ function App() {
       setAtk(data.stats[1].base_stat)
       setDef(data.stats[2].base_stat)
       setVel(data.stats[5].base_stat)
-      setTp(data.types[0].type.name)
     })
   
   }
