@@ -42,7 +42,6 @@ function App() {
                       <button className="la" type="submit" id="submit">Buscar</button> 
                         </form>
                           <div className="topCard">
-                          <h2 className="title">{id}</h2>
                         <h3 className="title">{nome}</h3>
                     </div>
                   <div className="mediaCard">
