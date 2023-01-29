@@ -90,7 +90,7 @@ img{
   background-color: #008000;
 }
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 700px) {
   .card {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -102,6 +102,14 @@ img {
   width: 226px;
   height: 218px;
   align-items: center;
+  margin-left: 160px;
+  margin-top: 2px;
+}
+.progress-title {
+  color: #1E1E1E;
+  margin-left: 30px;
+  margin-top: 0px;
+  text-transform: uppercase;
 }
 }
 .form {
